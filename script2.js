@@ -68,6 +68,7 @@ function escreverlista(){
         coluna3.appendChild(preçoP)
         //inserinho dados da array nas colunas(td)
         let posicaoArray= arrayProdutos.indexOf(item)
+        console.log(posicaoArray)
 
         let posicaoId=arrayProdutos.idProduto
 
@@ -116,7 +117,6 @@ function deletarItem(posicaoArray){
    // if(confirm('Deseja realmente apagar este item '+ (posicaoArray+1))){
     arrayProdutos.splice(posicaoArray,1)
     escreverlista()
-    alert(posicaoId)
    // }
 }
 function numero(){
